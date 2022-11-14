@@ -6,7 +6,7 @@ var audio;
 var audio2 = null;
 var number = 30;
 var puntos = 0;
-var rango = "cadete";
+
 var jugando = false;
 var una = true;
 //Movimiento del Pato hecho por Jhonny Castillo
@@ -14,8 +14,8 @@ function MoverPato(){
     jugando = true;
     randNum  = Math.round(Math.random()*200); 
     randNum2 = Math.round(Math.random()*600);
-    var A = document.getElementById("patorobot").style.marginTop = randNum + "px";
-    var B = document.getElementById("patorobot").style.marginLeft = randNum2 + "px";
+    document.getElementById("patorobot").style.marginTop = randNum + "px";
+    document.getElementById("patorobot").style.marginLeft = randNum2 + "px";
 }
 //Audio de explosion por Jhonny Castillo
 function enemigo() {
